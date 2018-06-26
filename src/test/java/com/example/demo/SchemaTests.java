@@ -13,9 +13,9 @@ public class SchemaTests {
 
     @Test
     public void testJsonSchema() throws Exception {
-        JsonSchema schema = JsonUtil.getJsonSchemaFromClasspath("schema.json");
+        JsonSchema schema = JsonUtil.getJsonSchemaFromClasspath("schema2.json");
 
-        JsonNode json = JsonUtil.getJsonNodeFromClasspath("test.json");
+        JsonNode json = JsonUtil.getJsonNodeFromClasspath("sampleData.json");
         Set<ValidationMessage> result = schema.validate(json);
         System.out.println(result);
         Assert.assertTrue(result.isEmpty());

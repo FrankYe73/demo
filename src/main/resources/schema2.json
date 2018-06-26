@@ -1,0 +1,33 @@
+{
+  "title": "SampleData",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string"
+    },
+    "zonedDateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "localDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "localTime": {
+      "type": "string",
+      "format": "time"
+    },
+    "utilDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sqlDate": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "text",
+    "zonedDateTime"
+  ]
+}
